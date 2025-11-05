@@ -70,7 +70,9 @@ sources:
           description: how much time the campaign has been seen
         - name: click
           description: how many click on the campaign
-
+      tests:
+        - unique:
+            column_name: "(date_date || '_' || campaign_key)"
     - name: bing_campaign
       identifier: raw_gz_bing
       description: bing campaign performance
@@ -82,13 +84,16 @@ sources:
         - name: campaign_key
           description: ID of the campaign
         - name: camPGN_name 
-          description: name of the adwords campaign
+          description: name of the bing campaign
         - name: ads_cost
           description: investment on the campaign
         - name: impression
           description: how much time the campaign has been seen
         - name: click
           description: how many click on the campaign
+      tests:
+        - unique:
+            column_name: "(date_date || '_' || campaign_key)"
 
     - name: criteo_campaign
       identifier: raw_gz_criteo
@@ -101,14 +106,16 @@ sources:
         - name: campaign_key
           description: ID of the campaign
         - name: camPGN_name 
-          description: name of the adwords campaign
+          description: name of the criteo campaign
         - name: ads_cost
           description: investment on the campaign
         - name: impression
           description: how much time the campaign has been seen
         - name: click
           description: how many click on the campaign
-
+      tests:
+        - unique:
+            column_name: "(date_date || '_' || campaign_key)"
     - name: facebook_campaign
       identifier: raw_gz_facebook
       description: facebook campaign performance
@@ -120,10 +127,13 @@ sources:
         - name: campaign_key
           description: ID of the campaign
         - name: camPGN_name 
-          description: name of the adwords campaign
+          description: name of the facebook campaign
         - name: ads_cost
           description: investment on the campaign
         - name: impression
           description: how much time the campaign has been seen
         - name: click
           description: how many click on the campaign
+      tests:
+        - unique:
+            column_name: "(date_date || '_' || campaign_key)"
