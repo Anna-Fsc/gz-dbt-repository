@@ -51,3 +51,79 @@ sources:
           description: logistic cost
         - name: ship_cost
           description : ship cost
+          
+    - name : adwords_campaign
+      identifier: raw_gz_adwords
+      description: adwords campaign performance
+      columns:
+        - name: date_date
+          description: date of the campaign
+        - name: paid_source
+          description: type of campaign (adwords)
+        - name: campaign_key
+          description: ID of the campaign
+        - name: camPGN_name 
+          description: name of the adwords campaign
+        - name: ads_cost
+          description: investment on the campaign
+        - name: impression
+          description: how much time the campaign has been seen
+        - name: click
+          description: how many click on the campaign
+
+    - name: bing_campaign
+      identifier: raw_gz_bing
+      description: bing campaign performance
+      columns:
+        - name: date_date
+          description: date of the bing campaign
+        - name: paid_source
+          description: type of campaign (bing)
+        - name: campaign_key
+          description: ID of the campaign
+        - name: camPGN_name 
+          description: name of the adwords campaign
+        - name: ads_cost
+          description: investment on the campaign
+        - name: impression
+          description: how much time the campaign has been seen
+        - name: click
+          description: how many click on the campaign
+
+    - name: criteo_campaign
+      identifier: raw_gz_criteo
+      description: criteo campaign performance
+      columns:
+        - name: date_date
+          description: date of the bing campaign
+        - name: paid_source
+          description: type of campaign (bing)
+        - name: campaign_key
+          description: ID of the campaign
+        - name: camPGN_name 
+          description: name of the adwords campaign
+        - name: ads_cost
+          description: investment on the campaign
+        - name: impression
+          description: how much time the campaign has been seen
+        - name: click
+          description: how many click on the campaign
+
+    - name: facebook_campaign
+      identifier: raw_gz_facebook
+      description: facebook campaign performance
+      columns:
+        - name: date_date
+          description: date of the bing campaign
+        - name: paid_source
+          description: type of campaign (bing)
+        - name: campaign_key
+          description: ID of the campaign
+        - name: camPGN_name 
+          description: name of the adwords campaign
+        - name: ads_cost
+          description: investment on the campaign
+        - name: impression
+          description: how much time the campaign has been seen
+        - name: click
+          description: how many click on the campaign
